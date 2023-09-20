@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Бросить кости</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Бросить кости</h1>
+    <div>
+        <h2>Первая кость: <span id="dice1">?</span></h2>
+        <h2>Вторая кость: <span id="dice2">?</span></h2>
+    </div>
+    <h2>Количество попыток: <span id="attempts">0</span></h2>
+    <button onclick="rollDice()">Бросить кости</button>
+
+    <script>
+        let attempts = 0;
+        const diceValues = [1, 2, 3, 4, 5, 6];
+
+        function getRandomFromArray(array) {
+            const randomIndex = Math.floor(Math.random() * array.length);
+            return array[randomIndex];
+        }
+
+        function rollDice() {
+            const dice1Value = getRandomFromArray(diceValues);
+            const dice2Value = getRandomFromArray(diceValues);
+
+            document.getElementById("dice1").textContent = dice1Value;
+            document.getElementById("dice2").textContent = dice2Value;
+
+            attempts++;
+            document.getElementById("attempts").textContent = attempts;
+
+            if (dice1Value === dice2Value) {
+                alert("Удачное совпадение!");
+            }
+        }
+        
+    </script>
+</body>
+</html>
+
+
