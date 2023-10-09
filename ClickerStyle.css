@@ -1,0 +1,52 @@
+h2 {
+    font-size: 32px;
+    font-family: sans-serif;
+
+}
+
+img {
+    position: absolute;
+    width: 314px;
+    height: 314px;
+    top: 138px;
+    left: 54px;
+}
+
+.header {
+    position: absolute;
+    width: 323px;
+    height: 39px;
+    top: 69px;
+    left: 54px;
+}
+
+.money {
+    position: absolute;
+    width: 126px;
+    height: 39px;
+    top: 218px;
+    left: 456px;
+    font-weight: 400;
+}
+
+.score {
+    position: absolute;
+    width: 35px;
+    height: 39px;
+    top: 218px;
+    left: 646px;
+    font-weight: 400;
+}
+
+.knopka {
+    position: absolute;
+    width: 133px;
+    height: 41px;
+    top: 314px;
+    left: 456px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background: #35BF05;
+    border: 0;
+    font-size: 20px;
+}

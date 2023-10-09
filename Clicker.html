@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CookieClicker</title>
+    <link rel="stylesheet" href="ClickerStyle.css">
+</head>
+<body>
+    <h2 class="header">Кликай на печеньку</h2>
+    <img id="cookieImg" src="cookie.png" alt="cookie">
+    <h2 class="money">Монеты</h2>
+    <h2 class="score" id="score">0</h2>
+    <button class="knopka">Upgrade</button>
+
+    <script>
+
+    let a = 0
+    let b = 1
+
+    const img = document.getElementById("cookieImg")
+    function clickImg(){
+        a = a + b
+        const Elementkol = document.getElementById("score")
+        Elementkol.innerHTML = a 
+    }
+
+    img.addEventListener('click', clickImg)
+    function upgrade(){
+        if (a >= 10){
+        b = 2;
+        }
+
+        if (a >= 100){
+        b = 4;
+        }
+    }
+
+    const upgradeButton = document.querySelector('.knopka');
+    upgradeButton.addEventListener('click', upgrade);
+
+    </script>
+</body>
+</html>
